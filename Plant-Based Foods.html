@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about plant-based foods and their benefits.">
+  <title>Plant-Based Foods</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 120px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Plant-Based Foods</h1>
+    <nav>
+      <ul>
+        <li><a href="pia-ba-benfi.html">Benefits</a></li>
+        <li><a href="pla-ba-exmp.html">Examples</a></li>
+        <li><a href="pal-ba-rescipes.html">Recipes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="benefits">
+      <h2>Benefits of Plant-Based Foods</h2>
+      <p>Plant-based foods are rich in nutrients and have numerous health benefits. They can reduce the risk of chronic diseases and help maintain a healthy weight.</p>
+      <button onclick="toggleContent('benefits')">Learn More</button>
+      <img src="https://cdn.shopify.com/s/files/1/0246/1397/8187/files/Pyramid_600x600.jpg?v=1620018540"  height="220" width="250"><br>
+      <div id="benefits-more" class="hidden">
+        <ul>
+          <li>Lower risk of heart disease</li>
+          <li>Improved digestion</li>
+          <li>Weight management</li>
+          <li>Better blood sugar control</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="examples">
+      <h2>Common Plant-Based Foods</h2>
+      <p>There are a variety of plant-based foods that provide all the essential nutrients your body needs:</p>
+      <ul>
+        <li>Lentils</li>
+        <li>Chickpeas</li>
+        <li>Tofu and Tempeh</li>
+        <li>Quinoa</li>
+        <li>Leafy greens (spinach, kale)</li>
+      </ul>
+      <button onclick="toggleContent('examples')">Learn More</button>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKTYI8ndvVInxCohFW6igD652_pycawKdNrg&s"  height="220" width="250"><br>
+      <div id="examples-more" class="hidden">
+        <p>Plant-based proteins can easily replace animal-based proteins in your diet. Combining different plant-based sources ensures a complete amino acid profile.</p>
+      </div>
+    </section>
+
+    <section id="recipes">
+      <h2>Plant-Based Recipes</h2>
+      <p>Check out these simple plant-based recipes:</p>
+      <ul>
+        <li><strong>Vegan Lentil Soup</strong> - A hearty and nutritious soup full of fiber and plant-based protein.</li>
+        <li><strong>Tofu Stir-fry</strong> - A quick and delicious stir-fry with your favorite vegetables and tofu.</li>
+        <li><strong>Chickpea Salad</strong> - A light and refreshing salad with chickpeas, veggies, and a tangy dressing.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Plant-Based Foods. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleContent(section) {
+  const contentElement = document.getElementById(`${section}-more`);
+  if (contentElement.classList.contains('hidden')) {
+    contentElement.classList.remove('hidden');
+  } else {
+    contentElement.classList.add('hidden');
+  }
+}
+
+  </script>
+</body>
+</html>

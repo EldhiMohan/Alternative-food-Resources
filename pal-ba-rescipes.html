@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Delicious and easy plant-based recipes you can try at home.">
+  <title>Plant-Based Recipes</title>
+  <style>
+    /* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+main {
+  margin-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: #4CAF50;
+}
+
+.recipe {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+h3 {
+  color: #333;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 140px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Plant-Based Recipes</h1>
+    <p>Explore delicious and nutritious plant-based recipes for every meal of the day.</p>
+  </header>
+
+  <main>
+    <section id="recipes">
+      <div class="recipe">
+        <h2>Vegan Lentil Soup</h2>
+        <button onclick="toggleRecipe('lentil-soup')">Learn More</button>
+        <img src="https://minimalistbaker.com/wp-content/uploads/2017/11/Everyday-Lentil-Soup-SQUARE.jpg"  height="220"  width="250"><br>
+        <div id="lentil-soup" class="hidden">
+          <h3>Ingredients:</h3>
+          <ul>
+            <li>1 cup dried lentils</li>
+            <li>1 onion, diced</li>
+            <li>2 garlic cloves, minced</li>
+            <li>1 carrot, chopped</li>
+            <li>1 celery stalk, chopped</li>
+            <li>1 can diced tomatoes</li>
+            <li>4 cups vegetable broth</li>
+            <li>Salt and pepper to taste</li>
+          </ul>
+          <h3>Instructions:</h3>
+          <ol>
+            <li>Heat olive oil in a large pot. Add onions, garlic, carrots, and celery. Sauté for 5 minutes.</li>
+            <li>Add lentils, diced tomatoes, and vegetable broth. Bring to a boil.</li>
+            <li>Reduce heat and let it simmer for 30 minutes, or until lentils are tender.</li>
+            <li>Season with salt and pepper, and serve warm.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="recipe">
+        <h2>Chickpea Salad</h2>
+        <button onclick="toggleRecipe('chickpea-salad')">Learn More</button>
+        <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2022/07/chickpea-salad-recipe-1.jpg"   height="220"  width="250"><br>
+        <div id="chickpea-salad" class="hidden">
+          <h3>Ingredients:</h3>
+          <ul>
+            <li>1 can chickpeas, drained and rinsed</li>
+            <li>1 cucumber, diced</li>
+            <li>1 bell pepper, diced</li>
+            <li>1 red onion, diced</li>
+            <li>1/4 cup olive oil</li>
+            <li>2 tablespoons lemon juice</li>
+            <li>1 teaspoon cumin</li>
+            <li>Salt and pepper to taste</li>
+          </ul>
+          <h3>Instructions:</h3>
+          <ol>
+            <li>In a large bowl, combine chickpeas, cucumber, bell pepper, and red onion.</li>
+            <li>In a small bowl, whisk together olive oil, lemon juice, cumin, salt, and pepper.</li>
+            <li>Pour the dressing over the salad and toss to combine. Serve chilled.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="recipe">
+        <h2>Tofu Stir-Fry</h2>
+        <button onclick="toggleRecipe('tofu-stirfry')">Learn More</button>
+        <img src="https://simpleveganblog.com/wp-content/uploads/2023/01/easy-tofu-stir-fry-square.jpg"  height="220"  width="250"><br>
+        <div id="tofu-stirfry" class="hidden">
+          <h3>Ingredients:</h3>
+          <ul>
+            <li>1 block tofu, cubed</li>
+            <li>1 bell pepper, sliced</li>
+            <li>1 broccoli crown, cut into florets</li>
+            <li>2 tablespoons soy sauce</li>
+            <li>1 tablespoon sesame oil</li>
+            <li>1 tablespoon garlic, minced</li>
+            <li>1 tablespoon ginger, minced</li>
+            <li>1 tablespoon rice vinegar</li>
+            <li>1 tablespoon sesame seeds (optional)</li>
+          </ul>
+          <h3>Instructions:</h3>
+          <ol>
+            <li>Press the tofu to remove excess water, then cut it into cubes.</li>
+            <li>In a large skillet, heat sesame oil. Add tofu and sauté until golden brown on all sides.</li>
+            <li>Add garlic, ginger, bell pepper, and broccoli. Stir-fry for 5-7 minutes.</li>
+            <li>Stir in soy sauce, rice vinegar, and sesame seeds. Cook for another 2-3 minutes.</li>
+            <li>Serve warm with rice or noodles.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Plant-Based Recipes. All rights reserved.</p>
+  </footer>
+
+  <script>
+function toggleRecipe(recipeId) {
+  const recipeDetails = document.getElementById(recipeId);
+  if (recipeDetails.classList.contains('hidden')) {
+    recipeDetails.classList.remove('hidden');
+  } else {
+    recipeDetails.classList.add('hidden');
+  }
+}
+
+  </script>
+</body>
+</html>

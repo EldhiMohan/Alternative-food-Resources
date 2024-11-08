@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alternative Food Resources - Plant-Based, Edible Insects, and Lab-Grown Meat">
+  <title>Alternative Food Resources</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    color: #4CAF50;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alternative Food Resources</h1>
+    <nav>
+      <ul>
+        <li><a href="Plant-Based Foods.html" target="_blank">Plant-Based</a></li>
+        <li><a href="Edible-insets.html" target="_blank">Edible Insects</a></li>
+        <li><a href="lab-grown.html" target="_blank">Lab-Grown Meat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="plant-based">
+      <h2>Plant-Based Proteins</h2>
+      <p>Plant-based proteins are sustainable and nutritious alternatives to meat. Examples include soy, lentils, quinoa, and peas.Plant-based proteins are an excellent alternative to animal-derived protein sources, offering a range of health and environmental benefits. Found in foods like legumes (beans, lentils, peas), whole grains (quinoa, oats, brown rice), nuts, seeds, and soy-based products (tofu, tempeh, edamame), these proteins are typically lower in saturated fat and free from cholesterol. They provide a full spectrum of essential amino acids, especially when combined thoughtfully—such as pairing beans with rice or nuts with whole grains. 
+
+        In addition to their protein content, plant-based foods are rich in fiber, vitamins, minerals, and antioxidants, all of which support heart health, digestive health, and overall well-being. Consuming plant-based proteins has also been linked to a reduced risk of chronic diseases like heart disease, type 2 diabetes, and certain cancers. 
+        
+        From an environmental perspective, plant-based proteins have a lower carbon footprint compared to animal-based proteins, requiring less land, water, and energy to produce. As more people adopt plant-based or flexitarian diets for both health and ecological reasons, plant-based proteins are becoming increasingly popular and accessible. Whether you’re a full-time vegan or simply looking to diversify your protein intake, plant-based options provide a nutritious, sustainable choice.</p>
+      <img src="https://images.onlymyhealth.com/imported/images/2023/August/14_Aug_2023/Main-plant-based-protein.jpg" height="220"  width="250"><br>
+      <button onclick="showInfo('plant-based')">Learn More</button>
+      <div id="plant-based-info" class="hidden">
+        <p>Plant-based food production is more sustainable and uses fewer resources compared to animal farming.
+          
+        </p>
+      </div>
+    </section>
+
+    <section id="edible-insects">
+      <h2>Edible Insects</h2>
+      <p>Insects like crickets, mealworms, and grasshoppers are high in protein and are becoming popular as a sustainable food source.
+        Edible insects are gaining recognition as a sustainable and nutritious food source, particularly as the world faces challenges related to food security and environmental sustainability. Insects like crickets, mealworms, and grasshoppers are rich in protein, healthy fats, vitamins, and minerals, making them a highly efficient source of nutrition. They require significantly less land, water, and feed compared to traditional livestock, and emit fewer greenhouse gases, making them a more eco-friendly alternative to meat production.
+
+In many cultures around the world, eating insects is a long-standing tradition, known as entomophagy. As global populations grow, edible insects present a viable solution to feed the future. They can be consumed whole, processed into protein powders, or used as ingredients in various food products. With increasing interest in plant-based and alternative proteins, edible insects are being integrated into modern diets, offering a sustainable and health-conscious option for both nutrition and sustainability.
+      </p>
+      <img src="https://media.istockphoto.com/id/157733872/photo/fried-insects-and-bugs-for-sale-in-phnom-penh-cambodia.jpg?s=612x612&w=0&k=20&c=7ZiQ3-fupuesJ4BOBl3BftEWftQLIQr1h_azshaD9Z4=" height="220"  width="250"><br>
+      <button onclick="showInfo('edible-insects')">Learn More</button>
+      <div id="edible-insects-info" class="hidden">
+        <p>Insects require less land, water, and food than traditional livestock and produce fewer greenhouse gases.
+          
+        </p>
+      </div>
+    </section>
+
+    <section id="lab-grown">
+      <h2>Lab-Grown Meat</h2>
+      <p>Lab-grown meat is produced using animal cells and cultured in a lab, offering an ethical and eco-friendly alternative to traditional meat.Lab-grown meat, also known as cultured or cell-based meat, is produced by cultivating animal cells in a lab rather than raising and slaughtering animals. It offers a promising solution to reduce the environmental impact of traditional meat production, requiring fewer resources like land, water, and feed, while also emitting fewer greenhouse gases. Lab-grown meat provides a cruelty-free alternative, addressing ethical concerns about animal welfare. As technology advances, cultured meat could become a more sustainable and ethical choice for consumers, potentially revolutionizing the food industry by offering meat without the environmental and ethical downsides of conventional livestock farming.</p>
+      <img src="https://cdn.viva.org.uk/wp-content/uploads/2020/11/lab_meat_stock_photo.jpg"   height="220"  width="250"><br>
+      <button onclick="showInfo('lab-grown')">Learn More</button>
+      <div id="lab-grown-info" class="hidden">
+        <p>Lab-grown meat can help reduce animal cruelty and the environmental impact of conventional livestock farming.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Alternative Food Resources. All rights reserved.</p>
+  </footer>
+
+  <script>function showInfo(section) {
+    const infoElement = document.getElementById(`${section}-info`);
+    if (infoElement.classList.contains('hidden')) {
+      infoElement.classList.remove('hidden');
+    } else {
+      infoElement.classList.add('hidden');
+    }
+  }</script>
+</body>
+</html> 
+
+
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn the benefits of a plant-based diet and how it improves health and the environment.">
+  <title>Benefits of Plant-Based Foods</title>
+  <style>
+    /* Resetting some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+main {
+  margin-top: 30px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.benefit {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Benefits of Plant-Based Foods</h1>
+    <p>Discover how a plant-based diet can benefit your health and the environment.</p>
+  </header>
+
+  <main>
+    <section id="health-benefits">
+      <h2>Health Benefits of Plant-Based Foods</h2>
+      <div class="benefit">
+        <h3>Improved Heart Health</h3>
+        <button onclick="toggleDetails('heart')">Learn More</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk4CgsDoiLGyhM1JHqTyVr_AEonK6nELie5g&s" height="220" width="250"><br>
+        <div id="heart-details" class="hidden">
+          <p>A plant-based diet can reduce the risk of heart disease by lowering cholesterol levels and improving blood pressure.</p>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <h3>Weight Management</h3>
+        <button onclick="toggleDetails('weight')">Learn More</button>
+        <img src="https://mapmygenome.in/cdn/shop/articles/Effective_Strategies_for_Weight_Management.webp?v=1720248101"  height="220" width="250"><br>
+        <div id="weight-details" class="hidden">
+          <p>Eating more fruits, vegetables, and whole grains can help maintain a healthy weight by providing low-calorie, nutrient-dense foods.</p>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <h3>Better Digestive Health</h3>
+        <button onclick="toggleDetails('digestive')">Learn More</button>
+        <img src="https://www.healthyr-u.com/cdn/shop/articles/Digestive-enzymes-Natures-helpers-for-better-digestion.jpg?v=1726136657&width=1100"   height="220" width="250"><br>
+        <div id="digestive-details" class="hidden">
+          <p>Plant-based foods are rich in fiber, which promotes healthy digestion and prevents constipation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="environment-benefits">
+      <h2>Environmental Benefits</h2>
+      <div class="benefit">
+        <h3>Lower Carbon Footprint</h3>
+        <button onclick="toggleDetails('carbon')">Learn More</button>
+        <img src="https://i.ytimg.com/vi/tvkHG9FN0xk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAAhVpQLOG4i4yiqj-7y8_NRDkvog"   height="220" width="250"><br>
+        <div id="carbon-details" class="hidden">
+          <p>Producing plant-based foods generates fewer greenhouse gases compared to animal agriculture, helping to reduce climate change.</p>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <h3>Conservation of Natural Resources</h3>
+        <button onclick="toggleDetails('resources')">Learn More</button>
+        <img src="https://images.news18.com/ibnlive/uploads/2021/07/1627377451_nature.jpg"    height="220" width="250"><br>
+        <div id="resources-details" class="hidden">
+          <p>Plant-based foods require less land, water, and energy than meat production, preserving valuable natural resources.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Plant-Based Foods. All rights reserved.</p>
+  </footer>
+
+  <script>
+function toggleDetails(benefit) {
+  const detailsElement = document.getElementById(`${benefit}-details`);
+  if (detailsElement.classList.contains('hidden')) {
+    detailsElement.classList.remove('hidden');
+  } else {
+    detailsElement.classList.add('hidden');
+  }
+}
+
+  </script>
+</body>
+</html>

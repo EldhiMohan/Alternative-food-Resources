@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the benefits and types of edible insects as an alternative food source.">
+  <title>Edible Insects as Alternative Food</title>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+main {
+  margin-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: #4CAF50;
+}
+
+.insect-item {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+h3 {
+  color: #333;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Edible Insects: A Sustainable Food Resource</h1>
+    <p>Discover the potential of edible insects as an alternative food source, rich in protein and essential nutrients.</p>
+  </header>
+
+  <main>
+    <section id="edible-insects">
+      <div class="insect-item">
+        <h2>Crickets</h2>
+        <button onclick="toggleDetails('crickets')">Learn More</button>
+        <img src="https://www.marketsandmarkets.com/Images/insect-protein-market30.jpg"  height="220"  width="250"><br>
+        <div id="crickets-details" class="hidden">
+          <h3>Benefits:</h3>
+          <ul>
+            <li>High in protein (65% by weight)</li>
+            <li>Rich in vitamins B12 and B2 (riboflavin)</li>
+            <li>Low environmental footprint</li>
+          </ul>
+          <h3>Common Uses:</h3>
+          <ul>
+            <li>Protein powder for smoothies</li>
+            <li>Cricket flour for baking</li>
+            <li>Snack bars and chips</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="insect-item">
+        <h2>Mealworms</h2>
+        <button onclick="toggleDetails('mealworms')">Learn More</button>
+        <img src="https://m.media-amazon.com/images/I/71IyFtLJiCL._AC_UF350,350_QL80_.jpg" height="220"  width="250"><br>
+        <div id="mealworms-details" class="hidden">
+          <h3>Benefits:</h3>
+          <ul>
+            <li>High in protein (50% by weight)</li>
+            <li>Rich in fiber and omega-3 fatty acids</li>
+            <li>Efficient feed conversion ratio</li>
+          </ul>
+          <h3>Common Uses:</h3>
+          <ul>
+            <li>Mealworm burgers</li>
+            <li>Mealworm snacks</li>
+            <li>Animal feed and pet food</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="insect-item">
+        <h2>Black Soldier Fly Larvae</h2>
+        <button onclick="toggleDetails('soldier-fly')">Learn More</button>
+        <img src="https://m.media-amazon.com/images/I/71hv2vVOaQL._AC_UF350,350_QL80_.jpg"  height="220"  width="250"><br>
+        <div id="soldier-fly-details" class="hidden">
+          <h3>Benefits:</h3>
+          <ul>
+            <li>High protein content (45% by weight)</li>
+            <li>Great for animal feed, and used in food supplements</li>
+            <li>Excellent for recycling organic waste</li>
+          </ul>
+          <h3>Common Uses:</h3>
+          <ul>
+            <li>Animal feed (poultry, fish, pigs)</li>
+            <li>Fertilizers</li>
+            <li>Probiotics in human food</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="insect-item">
+        <h2>Ants</h2>
+        <button onclick="toggleDetails('ants')">Learn More</button>
+        <img src="https://littlefireants.com/wp-content/uploads/locate-the-nest.png"  height="220"  width="250"><br>
+        <div id="ants-details" class="hidden">
+          <h3>Benefits:</h3>
+          <ul>
+            <li>Rich in protein and fat content</li>
+            <li>High in antioxidants</li>
+            <li>Can be eaten whole or ground into powder</li>
+          </ul>
+          <h3>Common Uses:</h3>
+          <ul>
+            <li>Ant-based seasonings</li>
+            <li>Ant protein powder</li>
+            <li>Used as a crunchy topping in dishes</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Edible Insects Info. All rights reserved.</p>
+  </footer>
+
+  <script>
+function toggleDetails(insect) {
+  const detailsElement = document.getElementById(`${insect}-details`);
+  if (detailsElement.classList.contains('hidden')) {
+    detailsElement.classList.remove('hidden');
+  } else {
+    detailsElement.classList.add('hidden');
+  }
+}
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore lab-grown foods as a sustainable and ethical alternative food resource.">
+  <title>Lab-Grown Foods: The Future of Sustainable Eating</title>
+  <style>
+    /* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  background-color: #3b8b40;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+main {
+  margin-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: #3b8b40;
+}
+
+.food-item {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+h3 {
+  color: #333;
+}
+
+button {
+  background-color: #3b8b40;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #2e7d32;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 140px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lab-Grown Foods: A Sustainable Future</h1>
+    <p>Discover how lab-grown foods are revolutionizing the food industry and offering a more sustainable, ethical, and resource-efficient way of producing food.</p>
+  </header>
+
+  <main>
+    <section id="lab-grown-foods">
+      <div class="food-item">
+        <h2>Lab-Grown Meat</h2>
+        <button onclick="toggleDetails('lab-grown-meat')">Learn More</button>
+        <img src="https://mediaproxy.salon.com/width/1200/https://media2.salon.com/2023/04/lab_grown_meat_scientist_1291345761.jpg"  height="220"  width="250">
+        <div id="lab-grown-meat" class="hidden">
+          <h3>Benefits:</h3>
+          <ul>
+            <li>Uses fewer resources (water, land, and energy)</li>
+            <li>Reduces greenhouse gas emissions compared to traditional livestock farming</li>
+            <li>Ethical alternative to conventional meat production</li>
+            <li>No animal slaughter required</li>
+          </ul>
+          <h3>Production Process:</h3>
+          <ul>
+            <li>Animal cells are harvested and cultured in a lab.</li>
+            <li>The cells grow into muscle tissue, creating lab-grown meat products.</li>
+            <li>The result is virtually identical to traditional meat in taste and texture.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="food-item">
+        <h2>Lab-Grown Fish</h2>
+        <button onclick="toggleDetails('lab-grown-fish')">Learn More</button>
+        <img src="https://t3.ftcdn.net/jpg/09/90/88/88/360_F_990888892_HwOPhU7g1M1MNE70dyb6BrrysWNDKp5B.jpg"   height="220"  width="250">
+        <div id="lab-grown-fish" class="hidden">
+          <h3>Benefits:</h3>
+          <ul>
+            <li>Less environmental impact than wild-caught or farmed fish</li>
+            <li>Does not deplete marine ecosystems</li>
+            <li>Can be produced in controlled environments, ensuring consistent quality</li>
+          </ul>
+          <h3>Production Process:</h3>
+          <ul>
+            <li>Fish cells are cultured in bioreactors where they grow into muscle tissue.</li>
+            <li>The process is sustainable and can be done without fishing or harming the environment.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="food-item">
+        <h2>Lab-Grown Dairy</h2>
+        <button onclick="toggleDetails('lab-grown-dairy')">Learn More</button>
+        <img src="https://aurigaresearch.com/wp-content/uploads/2009/05/Milk-Testing.jpg"   height="220"  width="250">
+        <div id="lab-grown-dairy" class="hidden">
+          <h3>Benefits:</h3>
+          <ul>
+            <li>Production without cows, reducing methane emissions</li>
+            <li>Less land and water usage than traditional dairy farming</li>
+            <li>Can be tailored to be lactose-free, making it accessible to more people</li>
+          </ul>
+          <h3>Production Process:</h3>
+          <ul>
+            <li>Lab-grown dairy is made by fermenting yeast or bacteria to produce milk proteins.</li>
+            <li>The proteins are then combined with other ingredients to make products like milk, cheese, and yogurt.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Lab-Grown Foods Info. All rights reserved.</p>
+  </footer>
+
+  <script>
+function toggleDetails(foodId) {
+  const detailsElement = document.getElementById(foodId);
+  if (detailsElement.classList.contains('hidden')) {
+    detailsElement.classList.remove('hidden');
+  } else {
+    detailsElement.classList.add('hidden');
+  }
+}
+
+  </script>
+</body>
+</html>
